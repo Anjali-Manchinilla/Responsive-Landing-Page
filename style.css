@@ -1,0 +1,128 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body{
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: transparent;
+    transition: 0.4s;
+}
+
+/* Navbar after scroll */
+nav.scrolled{
+    background-color: #222;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+}
+
+/* Logo */
+.logo{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Nav Links */
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li{
+    margin-left: 20px;
+}
+
+/* Links */
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.nav-links a:hover{
+    color: yellow;
+}
+
+/* Hero Section */
+.hero{
+    height: 100vh;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Button */
+button{
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover{
+    background: yellow;
+}
+
+/* Content Section */
+.content{
+    padding: 100px 40px;
+    background: #f4f4f4;
+    min-height: 100vh;
+}
+
+/* Responsive Design */
+@media(max-width: 768px){
+
+    nav{
+        flex-direction: column;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links li{
+        margin: 10px 0;
+    }
+
+    .hero h1{
+        font-size: 35px;
+    }
+}
